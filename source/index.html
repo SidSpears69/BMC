@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__top">
+            <div class="wrapper">
+                <a href="javascript:void(0)" class="page-header__enter">Вход на сайт <i class="fas fa-lock"></i></a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="page-header__navigation">
+                <a href="javascript:void(0)" class="page-header__logo" title="На главную"><img src="img/logo.png"
+                        alt="Логотип">На главную</a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Объявления</a></li>
+                        <li class="menu__item menu__item--dropdown active"><a href="javascript:void(0)" class="menu__link">Каталоги<i class="fas fa-angle-down"></i></a>
+                            <div class="menu__submenu-wrapper">
+                                <ul class="menu__submenu">
+                                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Рюкзаки</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Обувь</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Рубашки</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Джинсы</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Участники</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Партнеры</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">О платформе</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Новости</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <button class="search__toggle" title="Отобразить поиск"><i class="fas fa-search"></i></button>
+                    <div class="search__wrapper">
+                        <form action="javascript:void(0)" class="search__form">
+                            <input type="search" name="search" id="search" class="search__input" placeholder="Поиск товара">
+                            <button type="submit"class="search__submit">Искать</button>
+                        </form>
+                    </div>
+                </div>
+                <a href="javascript: void(0)" class="page-header__link page-header__link--favourites" title="2 товара в избранном"><i class="far fa-heart"></i>2</a>
+                <a href="javascript: void(0)" class="page-header__link page-header__link--basket" title="0 товаров в корзине"><i class="fas fa-shopping-bag"></i>0</a>
+            </div>
+        </div>
+    </header>
+    <main class="product">
+        <div class="wrapper">
+            <div class="product-images">
+                <div class="product-images__big-photo">
+                    <img src="img/original.png" alt="Фото товара">
+                </div>
+                <div class="product-images__slider">
+                    <div class="product-images__photo active">
+                        <img src="img/original-small.png" alt="Вид спереди">
+                    </div>
+                    <div class="product-images__photo">
+                        <img src="img/original-small-1.png" alt="Вид сзади">
+                    </div>
+                    <div class="product-images__photo">
+                        <img src="img/original-small-2.png" alt="Внутренняя часть">
+                    </div>
+                    <div class="product-images__photo">
+                        <img src="img/original-small-3.png" alt="Вид справа">
+                    </div>
+                    <div class="product-images__photo">
+                        <img src="img/original-small-4.png" alt="Вид слева">
+                    </div>
+                </div>
+            </div>
+            <div class="product-description">
+                <div class="product-description__top">
+                    <h1 class="product-description__title">Рюкзак PUMA</h1>
+                    <div class="rating">
+                        <p class="rating__text">Просмотров: <span class="rating__counter">200</span></p>
+                        <div class="rating__stars" id="rating-1">
+                            <input type="hidden" name="val" value="3"/>
+                            <input type="hidden" name="vote-id" value="1"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description__buy-info">
+                    <p class="price"><span class="price__value">5 000.00 </span>KZT / Шт.</p>
+                    <p class="availability">В наличии на складе <span class="availability__quantity">(1)</span></p>
+                </div>
+                <div class="product-description__colors">
+                    <span>Цвет:</span>
+                    <div class="colors">
+                        <input type="radio" name="colors" id="green" value="Зеленый" class="colors__radio" checked>
+                            <label class="colors__item" for="green"><span
+                                class="colors__value" style="background-color: #86c255;"></span>Зеленый</label>
+                        <input type="radio" name="colors" id="yellow" value="Желтый" class="colors__radio">
+                        <label class="colors__item" for="yellow"><span class="colors__value"
+                                style="background-color: #e9eb5b;"></span>Желтый</label>
+                        <input type="radio" name="colors" id="red" value="Красный" class="colors__radio">
+                        <label class="colors__item" for="red"><span class="colors__value"
+                                style="background-color: #e84b4b;"></span>Красный</label>
+                        <input type="radio" name="colors" id="blue" value="Синий" class="colors__radio">
+                        <label class="colors__item" for="blue"><span class="colors__value"
+                                style="background-color: #4b91e8;"></span>Синий</label>
+                    </div>
+                </div>
+                <div class="delivery-method">
+                    <p class="delivery-method__title">Способ доставки:</p>
+                        <input type="radio" name="delivery" id="pickup" value="Самовывоз"
+                            class="delivery-method__input" checked>
+                        <label for="pickup" class="delivery-method__controls delivery-method__controls"><span>Самовывоз</span></label>
+                        <input type="radio" name="delivery" id="delivery" value="Доставка"
+                            class="delivery-method__input">
+                        <label for="delivery"
+                            class="delivery-method__controls delivery-method__controls--delivery"><span>Доставка</span></label>
+                    <div class="delivery-method__tab-content" id="pickup__adresses">
+                        <p class="delivery-method__title delivery-method__title--tab-content">Пункты самовывоза</p>
+                        <input type="radio" name="pickup-points" id="pickup-address-1"
+                            value="Мангеликель 17 ЖК Коркем (Мангеликель 17)" class="delivery-method__input" checked>
+                        <label for="pickup-address-1"
+                            class="delivery-method__adress">Мангеликель 17 ЖК Коркем
+                            (Мангеликель 17)</label>
+                        <input type="radio" name="pickup-points" id="pickup-address-2"
+                            value="Шоурум № 1 2018 (Абая 8 Торговый дом Алтын)" class="delivery-method__input">
+                        <label for="pickup-address-2" class="delivery-method__adress">Шоурум № 1
+                            2018 (Абая 8 Торговый дом Алтын)</label>
+                    </div>
+                    <div class="delivery-method__tab-content" id="delivery__adresses">
+                        <p class="delivery-method__title delivery-method__title--tab-content">Пункты доставки</p>
+                        <input type="radio" name="delivery-points" id="delivery-address-1"
+                            value="Мангеликель 25 ЖК Коркем (Мангеликель 25)" class="delivery-method__input" checked>
+                        <label for="delivery-address-1"
+                            class="delivery-method__adress">Мангеликель 25 ЖК Коркем
+                            (Мангеликель 25)</label>
+                        <input type="radio" name="delivery-points" id="delivery-address-2"
+                            value="Шоурум № 2 2020 (Абая 15 Торговый дом Алтын)" class="delivery-method__input">
+                        <label for="delivery-address-2" class="delivery-method__adress">Шоурум № 2
+                            2020 (Абая 15 Торговый дом Алтын)</label>
+                    </div>
+                </div>
+                <div class="product-controls">
+                    <button class="product-controls__button product-controls__button--basket">Добавить в
+                        корзину</button>
+                    <button class="product-controls__button">В избранное</button>
+                    <button class="product-controls__button">Оптовые предложения</button>
+                </div>
+                <div class="product-info">
+                    <p>Товаров в корзине: <span class="product-info__quantity product-info__quantity--basket">2</span>
+                    </p>
+                    <p>В избранном: <span class="product-info__quantity product-info__quantity--favourites">5</span></p>
+                    <div class="product-info__sharing">
+                        <p>Поделиться товаром:</p>
+                        <div class="sharing">
+                            <a href="javascript:void(0)" title="Twitter"
+                                class="sharing__link sharing__link--twitter">Twitter</a>
+                            <a href="javascript:void(0)" title="Facebook"
+                                class="sharing__link sharing__link--facebook">Facebook</a>
+                            <a href="javascript:void(0)" title="Вконтакте"
+                                class="sharing__link sharing__link--vk">Вконтакте</a>
+                            <a href="javascript:void(0)" title="Одноклассники"
+                                class="sharing__link sharing__link--ok">Одноклассники</a>
+                            <a href="javascript:void(0)" title="Google Plus"
+                                class="sharing__link sharing__link--google">Google Plus</a>
+                            <a href="javascript:void(0)" title="Linkedin"
+                                class="sharing__link sharing__link--linkedin">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/jquery.cookie.js"></script>
+    <script src="vendors/jquery.rating-2.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

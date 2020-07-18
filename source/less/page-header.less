@@ -1,0 +1,63 @@
+.page-header__top {
+    border-bottom: 1px solid @white-five;
+    padding: 16px 0;
+    position: relative;
+    z-index: 100;
+    & .wrapper {
+        text-align: right;
+    }
+}
+.page-header__enter {
+    margin-left: auto;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    & i {
+        font-size: 12px;
+        color: @pinkish-grey;
+        margin-left: 9px;
+    }
+}
+.page-header__navigation {
+    display: flex;
+    margin-top: -1px;
+    align-items: center;
+    width: 100%;
+}
+.page-header__logo {
+    font-size: 0;
+}
+.page-header__link {
+    text-align: center;
+    & i {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 6px;
+    }
+    &--favourites {
+        color: @orange;
+        padding: 13px 20px 24px;
+        background: url("../img/flag.png") no-repeat;
+        background-size: contain;
+        margin-left: 49px;
+        transition: 0.3s all linear;
+        &:hover {
+            color: @white;
+            background-image: url("../img/flag-orange.png");
+            transition: 0.3s all linear;
+        }
+    }
+    &--basket {
+        color: @white;
+        padding: 13px 21px 24px;
+        background: url("../img/flag-orange.png") no-repeat;
+        background-size: contain;
+        margin-left: 10px;
+        transition: 0.3s all linear;
+
+        &:hover {
+            color: @orange;
+            background-image: url("../img/flag.png");
+            transition: 0.3s all linear;
+        }
+    }
+}

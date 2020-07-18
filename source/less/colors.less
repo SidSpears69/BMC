@@ -1,0 +1,23 @@
+.colors {
+    margin-left: 25px;
+    display: flex;
+}
+.colors__item {
+    border: 1px solid  @white-five;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    padding:1px;
+    padding-right: 21px;
+}
+.colors__value {
+    width: 26px;
+    height: 26px;
+    margin-right: 21px;
+}
+.colors__radio {
+    display: none;
+}
+.colors__radio:checked + .colors__item {
+    border-color: @orange;
+}

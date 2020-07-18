@@ -1,0 +1,27 @@
+.product-images {
+    width: 550px;
+}
+.product-images__big-photo {
+    width: 100%;
+    border: 1px solid @white-five;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+}
+.product-images__slider {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.product-images__photo {
+    width: 87px;
+    height: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid @white-five;
+    &.active {
+        border-color: @orange;
+    }
+}
