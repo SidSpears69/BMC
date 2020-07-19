@@ -39,7 +39,6 @@
         });
         
         this._data.val = parseFloat(this._data.val) || 0;
-        console.log(this._data.val);
         this._data.votes = parseFloat(this._data.votes) || '';
         this._data.location = window.location.pathname;
         

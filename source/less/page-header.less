@@ -28,6 +28,7 @@
 }
 .page-header__link {
     text-align: center;
+    align-self: flex-start;
     & i {
         font-size: 20px;
         display: block;
@@ -59,5 +60,34 @@
             background-image: url("../img/flag.png");
             transition: 0.3s all linear;
         }
+    }
+}
+@media @large {
+    .page-header__link--favourites {
+        margin-left: 3%;
+    }
+    .page-header__logo {
+        width: 20%;
+    }
+}
+@media @medium {
+    .page-header__navigation {
+        flex-wrap: wrap;
+    }
+}
+@media @small {
+    .page-header .wrapper--mobile {
+        margin-top: 60px;
+    }
+    .page-header__logo {
+        width: 45%;
+    }
+    .page-header__top {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        top: 0;
+        background: #fff;
+        box-shadow: 0 5px 5px -5px #333;
     }
 }

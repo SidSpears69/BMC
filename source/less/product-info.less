@@ -1,0 +1,35 @@
+.product-info {
+    padding-top: 29px;
+    display: flex;
+    font-size: 14px;
+}
+.product-info__text {
+    margin-right: 4%;
+}
+.product-info__quantity {
+    font-weight: bold;
+}
+.product-info__sharing {
+    margin-left: auto;
+    display: flex;
+}
+@media (max-width: 1370px){
+    .product-info__text {
+        margin-right: 5px;
+    }
+}
+@media @medium {
+    .product-info {
+        flex-wrap: wrap;
+    }
+    .product-info__sharing {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media @small {
+    .product-info,
+    .product-info__sharing{
+        justify-content: center;
+    }
+}
